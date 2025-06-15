@@ -27,16 +27,16 @@ class ExpenseManager:
   def get_total_by_category(self):
     totals = {}
     for expense in self.expenses:
-      category = expense["category"]
-      amount = expense["amount"]
+      category = expense.category
+      amount = expense.amount
       totals[category] = totals.get(category, 0) + amount
     return totals
   def get_monthly_summary(self):
     monthly_totals = {}
     for expense in self.expenses:
-      date = expense["date"]
-      amount = expense["amount"]
-      month = date[:7]
+      date = expense.date
+      amount = expense.amount
+      month = date[:6]
       monthly_totals[month] = monthly_totals.get(month, 0) + amount
     return monthly_totals
 
