@@ -40,5 +40,12 @@
         "amount": 8000,
         "method": "card",
         "note": "bbb"
+    },
+    {
+        "date": "20250628",
+        "category": "food",
+        "amount": 1400,
+        "method": "card",
+        "note": "aaa"
     }
 ]

@@ -1,1 +1,58 @@
-<mxfile host="0srl246vt981ja3tuucc76bpo2bgjb35alnl4825iutu1ghrj6j3" modified="2025-06-01T02:18:58.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.100.2 Chrome/132.0.6834.210 Electron/34.5.1 Safari/537.36" version="12.2.4" etag="oRpD1oxN6ETUwL-lNphK"><diagram id="MxFnfJLvVGltcsVUjmuB">7VZNj9owEP01uVaJQ4BeSXe7B1ZaLZV6HhKTWOt4IscU2F/fcTImpCwSUtWeFiKUeTOT+XjPClGaN8fvFtr6GUupIxGXxyj9Fgkxn2X064HTAKRLBiqrygFKRmCj3iWDMaN7VcpuEugQtVPtFCzQGFm4CQbW4mEatkM9rdpCJa+ATQH6Gv2pSlcP6FIsRvxJqqoOlZP518HTQAjmSboaSjxcQOlDlOYW0Q13zTGX2u8u7GXIe7zhPTdmpXH3JIgh4RfoPc/2A7Y05tCcO4WJu4NqNBiyVjs0bsOemOyiVrpcwwn3vmLnoHgL1qpGq94pHjS5EgLIbR0TKub+aUrrHDXavk4qY/+dZG78E7mWlR3lvoTxkj+gZzhOAtfQudAlag1tp7Z93z6xAVsps0LnsOGgMOXjtKld/yE/aFUZwgqqJW3YxTBNMiObtymtk8ebjCRnnul8SGyksycK4YSMlcFHY8HmYdRZMmesvtRYPGN9s7ar85NH+umGFfCxGtIrNbySOEWcXOmB5nM9nRbfZFiVwUEgF9tjqGuhUKZay51vdzYirzyBh5D2ttP9aahVWUrjeUQHDrZnsbWojOsnzFZ00SLy+EsWZdRTTnYy2nT5cOtyNNQmqH79khRxkF4VE+7EvdyJj7ljskjRd5EV4v6Gq9kNrsQnV3dxlYn/x1V2g6v0k6u7uFos/xlXZI5v29538ZclffgN</diagram></mxfile>
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="ページ1" id="8SKx6obbp8otXwOfJk-Q">
+    <mxGraphModel dx="690" dy="1762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-1" target="WhQOPjh6wbFxaR4cljVT-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-1" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-2" target="WhQOPjh6wbFxaR4cljVT-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-2" value="the user inputs the data" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-4" target="WhQOPjh6wbFxaR4cljVT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-4" value="store the value in the dictionary" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="230" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-6" value="save data as a json file" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-8" value="save the expense data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="-30" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-9" target="WhQOPjh6wbFxaR4cljVT-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-9" value="start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="390" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-10" target="WhQOPjh6wbFxaR4cljVT-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-10" value="store the value from json file to the dictionary" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="390" y="100" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="WhQOPjh6wbFxaR4cljVT-11" target="WhQOPjh6wbFxaR4cljVT-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-11" value="store the value in the dictionary" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="390" y="230" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-12" value="save data as a json file" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="390" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="WhQOPjh6wbFxaR4cljVT-13" value="display user&#39;s expense data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="-30" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
