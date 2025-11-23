@@ -1,18 +1,36 @@
 #%%
 from datetime import datetime
 class Expense:
-  def __init__(self, date, category, amount, method, note):
+  #カードのルールを集中管理
+  CARD_RULES = {
+    "card": {"closing_day": 10, "settlement_day": 4},
+    "card2": {"closing_day": 30, "settlement_day": 27}
+  }
+  def __init__(self, date, category=None, amount=0, method=None, note=None,settlement_date = None, **kwargs):
     self.date = date #支出登録日
     self.category = category
     self.amount = amount
     self.method = method
+    #正規化：既存dataの"card"を規定カード"card1"に変換する
+    # method_key = (method or "").strip().lower()
+    # if method_key == "card":
+    #   method_key = "card1"
+    # self.method = method_key
     self.note = note
-    self.settlement_day = 4 #カードの引き落とし日
-    self.closing_day = 10 #カードの締め日
+
+    self.settlement_day = None
+    self.closing_day = None
+
+    #methodを参照して、それがCARD＿RULESにあればそれをキーとして指定して、そのvaluesを取ってくるようにする
+    rules = self.CARD_RULES.get(self.method) #methodがCARD_RULESのkeyに存在すればそのvaluesを返す
+    if rules:
+      self.closing_day = rules["closing_day"]
+      self.settlement_day = rules["settlement_day"]
+
     self.settlement_date = self.calculate_settlement_date()
     
   def calculate_settlement_date(self):
-    if self.method.lower() == "card":
+    if self.method and self.method in self.CARD_RULES:
       original_date = datetime.strptime(self.date, "%Y-%m-%d")
 
       #締め日を基準に翌月または翌々月を計算
@@ -39,7 +57,8 @@ class Expense:
       "category": self.category,
       "amount": self.amount,
       "method": self.method,
-      "note": self.note
+      "note": self.note,
+      "settlement_date": self.settlement_date,
     }
 
 
