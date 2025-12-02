@@ -4,15 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <title>支出の登録</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>一日の支出を登録</h1>
+  <div class="container">
+    <header class="site-header">
+      <h1>支出の登録</h1>
+      <nav><a class="btn-link" href="/">グラフに戻る</a></nav>
+    </header>
 
-    <form method="POST">
-        <label for="date">日付 (YYYY-MM-DD):</label><br>
-        <input type="date" name="date" required><br><br>
+    <section class="panel form-panel">
+      <form method="POST" class="form-grid">
+        <label for="date">日付</label>
+        <input type="date" name="date" required>
 
-        <label for="category">カテゴリ (例: food, hobby):</label><br>
+        <label for="category">カテゴリ</label>
         <select name="category" required>
           <option value="">--選択して下さい--</option>
           <option value="food">食費・生活費等</option>
@@ -20,26 +26,28 @@
           <option value="loan">ローン</option>
           <option value="transport">交通費</option>
           <option value="other">その他</option>
-        </select><br><br>
+        </select>
 
-        <label for="amount">金額:</label><br>
-        <input type="number" name="amount" required><br><br>
+        <label for="amount">金額</label>
+        <input type="number" name="amount" required>
 
-        <label for="method">支払い方法 (例: cash, card):</label><br>
+        <label for="method">支払い方法</label>
         <select name="method" required>
           <option value="">--選択して下さい--</option>
           <option value="cash">現金（モバイル決済含む）</option>
-          <option value="card">クレジットカード(SAISON)（10日締め→翌月4日）</option>
+          <option value="card1">クレジットカード(SAISON)（10日締め→翌月4日）</option>
           <option value="card2">クレジットカード(セディナ)（30日締め→翌月27日）</option>
-        </select><br><br>
+        </select>
 
-        <label for="note">メモ:</label><br>
-        <textarea name="note"></textarea><br><br>
+        <label for="note">メモ</label>
+        <textarea name="note"></textarea>
 
-        <button type="submit">登録</button>
-    </form>
+        <div></div>
+        <button class="btn" type="submit">登録</button>
+      </form>
+    </section>
 
-    <br>
-    <a href="/">グラフに戻る</a>
+    <footer class="site-footer">&copy; 家計簿アプリ</footer>
+  </div>
 </body>
 </html>
