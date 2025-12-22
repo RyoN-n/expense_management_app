@@ -9,7 +9,12 @@ class ExpenseManager:
     try:
       with open(file_path, encoding='utf-8') as f: ##インスタンス化して時点でjsonファイルのdataを読み込んでおく
         loaded = json.load(f)
-        self.expenses = [Expense(**item) for item in loaded]
+        for item in loaded:
+          # methodを正規化
+          method_key = (item.get("method") or "").strip().lower()
+          if method_key == "card":
+            item["method"] = "card1"
+          self.expenses.append(Expense(**item))
     except (FileNotFoundError, json.JSONDecodeError):
       pass
 

@@ -10,12 +10,12 @@ class Expense:
     self.date = date #支出登録日
     self.category = category
     self.amount = amount
-    self.method = method
+    #self.method = method
     #正規化：既存dataの"card"を規定カード"card1"に変換する
-    # method_key = (method or "").strip().lower()
-    # if method_key == "card":
-    #   method_key = "card1"
-    # self.method = method_key
+    method_key = (method or "").strip().lower()
+    if method_key == "card":
+      method_key = "card1"
+    self.method = method_key
     self.note = note
 
     self.settlement_day = None
