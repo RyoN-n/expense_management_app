@@ -42,6 +42,14 @@ class Visualizer:
     labels = [k for k, _ in items]
     values = [v for _, v in items]
     plt.pie(values, labels=labels, autopct=make_autopct(values), startangle=90, counterclock=False)
+    
+    #合計金額をグラフの近くに表示
+    total = sum(values)
+    ax = plt.gca()
+    ax.text(0.9, 0.9, f"Total\n¥{total:,}", transform=ax.transAxes,
+           fontsize=12, ha='left', va='center',
+           bbox=dict(boxstyle="round,pad=0.4", facecolor="white", edgecolor="#cccccc"))
+
     plt.title('Expenses by Category (Amount)')
     plt.axis('equal')
     plt.savefig(output_path)
@@ -93,11 +101,12 @@ class Visualizer:
     # 棒グラフを描画
     plt.figure(figsize=(8, 5))
     left = np.arange(len(months))
-    plt.bar(left, amounts, width=0.6, tick_label=months)
+    plt.bar(left, amounts, width=0.6, tick_label=months, zorder = 3)
     plt.title('Monthly Expenses (Including Credit Card Payments)')
     plt.xlabel('Month')
     plt.ylabel('Total Amount')
     plt.xticks(rotation=45)
+    plt.grid(axis = 'y', linestyle = '--', zorder = 0)
     plt.tight_layout()
     plt.savefig(output_path)
     plt.close()

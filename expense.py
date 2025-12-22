@@ -3,10 +3,10 @@ from datetime import datetime
 class Expense:
   #カードのルールを集中管理
   CARD_RULES = {
-    "card": {"closing_day": 10, "settlement_day": 4},
+    "card1": {"closing_day": 10, "settlement_day": 4},
     "card2": {"closing_day": 30, "settlement_day": 27}
   }
-  def __init__(self, date, category=None, amount=0, method=None, note=None,settlement_date = None, **kwargs):
+  def __init__(self, date, category=None, amount=0, method=None, note=None, settlement_date=None, **kwargs):
     self.date = date #支出登録日
     self.category = category
     self.amount = amount
